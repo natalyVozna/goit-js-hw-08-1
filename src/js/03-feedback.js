@@ -21,8 +21,8 @@ function getDataFromLocalStorage() {
   dataParse = JSON.parse(dataLocalStorage);
   dataObj.email = dataParse.email;
   dataObj.message = dataParse.message;
-  emailEl.value = dataParse.email || '';
-  messageEl.value = dataParse.message || '';
+  emailEl.value = dataParse.email;
+  messageEl.value = dataParse.message;
 }
 
 function handleChangeForm(e) {
